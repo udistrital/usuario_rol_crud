@@ -104,6 +104,8 @@ func GetAllUsuario(query map[string]string, fields []string, sortby []string, or
 		if len(order) != 0 {
 			return nil, errors.New("Error: unused 'order' fields")
 		}
+		// orden descendente por fecha_creacion por defecto
+		sortFields = append(sortFields, "-FechaCreacion")
 	}
 
 	var l []Usuario
@@ -155,7 +157,8 @@ func DeleteUsuario(id int) (err error) {
 		v.Activo = false
 		v.FechaCreacion = time_bogota.TiempoCorreccionFormato(v.FechaCreacion)
 		v.FechaModificacion = time_bogota.TiempoBogotaFormato()
-		if _, err = o.Update(&v, "activo", "fechaModificacion"); err == nil {
+		// los nombres de campo deben coincidir con los del struct (PascalCase)
+		if _, err = o.Update(&v, "Activo", "FechaModificacion"); err == nil {
 			fmt.Println("El registro ha sido marcado como inactivo")
 		} else {
 			fmt.Println("Error al actualizar el campo Activo:", err)
@@ -173,6 +176,7 @@ func DocumentoExistente(documento string) bool {
 	o := orm.NewOrm()
 	return o.QueryTable("usuario").Filter("documento", documento).Exist()
 }
+
 func GetUsuarioByDocumento(documento string) (*Usuario, error) {
 	o := orm.NewOrm()
 	var usuario Usuario

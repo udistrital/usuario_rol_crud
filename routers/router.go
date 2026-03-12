@@ -16,12 +16,6 @@ import (
 func init() {
 	ns := beego.NewNamespace("/v1",
 
-		/*beego.NSNamespace("/sistemas-informacion",
-			beego.NSInclude(
-				&controllers.SistemaInformacionController{},
-			),
-		),*/
-
 		beego.NSNamespace("/roles",
 			beego.NSInclude(
 				&controllers.RolController{},
@@ -29,10 +23,10 @@ func init() {
 		),
 
 		beego.NSNamespace("/usuarios",
+			beego.NSRouter("/:documento/periodos", &controllers.UsuarioController{}, "get:GetPeriodosByDocumento"),
 			beego.NSInclude(
 				&controllers.UsuarioController{},
 			),
-			beego.NSRouter("/:documento/periodos", &controllers.UsuarioController{}, "get:GetPeriodosByDocumento"),
 		),
 
 		beego.NSNamespace("/periodos-rol-usuarios",

@@ -1,7 +1,8 @@
 swagger: "2.0"
 info:
   title: beego Test API
-  description: beego has a very cool tools to autogenerate documents for your API
+  description: |
+    beego has a very cool tools to autogenerate documents for your API
   version: 1.0.0
   termsOfService: http://beego.me/
   contact:
@@ -15,7 +16,9 @@ paths:
     get:
       tags:
       - periodos-rol-usuarios
-      description: get PeriodoRolUsuario
+      description: |-
+        get PeriodoRolUsuario
+        <br>
       operationId: PeriodoRolUsuarioController.Get All
       parameters:
       - in: query
@@ -32,7 +35,8 @@ paths:
         type: string
       - in: query
         name: order
-        description: Order corresponding to each sortby field, if single value, apply to all sortby fields. e.g. desc,asc ...
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
         type: string
       - in: query
         name: limit
@@ -56,7 +60,9 @@ paths:
     post:
       tags:
       - periodos-rol-usuarios
-      description: create PeriodoRolUsuario
+      description: |-
+        create PeriodoRolUsuario
+        <br>
       operationId: PeriodoRolUsuarioController.Post
       parameters:
       - in: body
@@ -74,7 +80,9 @@ paths:
     get:
       tags:
       - periodos-rol-usuarios
-      description: get PeriodoRolUsuario by id
+      description: |-
+        get PeriodoRolUsuario by id
+        <br>
       operationId: PeriodoRolUsuarioController.Get One
       parameters:
       - in: path
@@ -92,7 +100,9 @@ paths:
     put:
       tags:
       - periodos-rol-usuarios
-      description: update the PeriodoRolUsuario
+      description: |-
+        update the PeriodoRolUsuario
+        <br>
       operationId: PeriodoRolUsuarioController.Put
       parameters:
       - in: path
@@ -116,7 +126,9 @@ paths:
     delete:
       tags:
       - periodos-rol-usuarios
-      description: delete the PeriodoRolUsuario
+      description: |-
+        delete the PeriodoRolUsuario
+        <br>
       operationId: PeriodoRolUsuarioController.Delete
       parameters:
       - in: path
@@ -133,7 +145,9 @@ paths:
     get:
       tags:
       - roles
-      description: get Rol
+      description: |-
+        get Rol
+        <br>
       operationId: RolController.Get All
       parameters:
       - in: query
@@ -150,7 +164,8 @@ paths:
         type: string
       - in: query
         name: order
-        description: Order corresponding to each sortby field, if single value, apply to all sortby fields. e.g. desc,asc ...
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
         type: string
       - in: query
         name: limit
@@ -170,7 +185,9 @@ paths:
     post:
       tags:
       - roles
-      description: create Rol
+      description: |-
+        create Rol
+        <br>
       operationId: RolController.Post
       parameters:
       - in: body
@@ -188,7 +205,9 @@ paths:
     get:
       tags:
       - roles
-      description: get Rol by id
+      description: |-
+        get Rol by id
+        <br>
       operationId: RolController.Get One
       parameters:
       - in: path
@@ -206,7 +225,9 @@ paths:
     put:
       tags:
       - roles
-      description: update the Rol
+      description: |-
+        update the Rol
+        <br>
       operationId: RolController.Put
       parameters:
       - in: path
@@ -230,7 +251,9 @@ paths:
     delete:
       tags:
       - roles
-      description: delete the Rol
+      description: |-
+        delete the Rol
+        <br>
       operationId: RolController.Delete
       parameters:
       - in: path
@@ -247,7 +270,9 @@ paths:
     get:
       tags:
       - usuarios
-      description: get Usuario
+      description: |-
+        get Usuario
+        <br>
       operationId: UsuarioController.Get All
       parameters:
       - in: query
@@ -264,7 +289,8 @@ paths:
         type: string
       - in: query
         name: order
-        description: Order corresponding to each sortby field, if single value, apply to all sortby fields. e.g. desc,asc ...
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
         type: string
       - in: query
         name: limit
@@ -284,7 +310,9 @@ paths:
     post:
       tags:
       - usuarios
-      description: create Usuario
+      description: |-
+        create Usuario
+        <br>
       operationId: UsuarioController.Post
       parameters:
       - in: body
@@ -302,7 +330,9 @@ paths:
     get:
       tags:
       - usuarios
-      description: get Usuario by documento and periodos
+      description: |-
+        get Usuario by documento and periodos
+        <br>
       operationId: UsuarioController.Get One Periodo por Documento
       parameters:
       - in: path
@@ -324,7 +354,8 @@ paths:
         type: string
       - in: query
         name: order
-        description: Order corresponding to each sortby field, if single value, apply to all sortby fields. e.g. desc,asc ...
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
         type: string
       - in: query
         name: limit
@@ -345,7 +376,9 @@ paths:
     get:
       tags:
       - usuarios
-      description: get Usuario by id
+      description: |-
+        get Usuario by id
+        <br>
       operationId: UsuarioController.Get One
       parameters:
       - in: path
@@ -363,7 +396,9 @@ paths:
     put:
       tags:
       - usuarios
-      description: update the Usuario
+      description: |-
+        update the Usuario
+        <br>
       operationId: UsuarioController.Put
       parameters:
       - in: path
@@ -387,7 +422,9 @@ paths:
     delete:
       tags:
       - usuarios
-      description: delete the Usuario
+      description: |-
+        delete the Usuario
+        <br>
       operationId: UsuarioController.Delete
       parameters:
       - in: path
