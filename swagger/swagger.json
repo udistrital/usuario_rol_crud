@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "title": "beego Test API",
-        "description": "beego has a very cool tools to autogenerate documents for your API\n",
+        "description": "beego has a very cool tools to autogenerate documents for your API",
         "version": "1.0.0",
         "termsOfService": "http://beego.me/",
         "contact": {
@@ -20,7 +20,7 @@
                 "tags": [
                     "periodos-rol-usuarios"
                 ],
-                "description": "get PeriodoRolUsuario\n\u003cbr\u003e",
+                "description": "get PeriodoRolUsuario",
                 "operationId": "PeriodoRolUsuarioController.Get All",
                 "parameters": [
                     {
@@ -82,7 +82,7 @@
                 "tags": [
                     "periodos-rol-usuarios"
                 ],
-                "description": "create PeriodoRolUsuario\n\u003cbr\u003e",
+                "description": "create PeriodoRolUsuario",
                 "operationId": "PeriodoRolUsuarioController.Post",
                 "parameters": [
                     {
@@ -110,7 +110,7 @@
                 "tags": [
                     "periodos-rol-usuarios"
                 ],
-                "description": "get PeriodoRolUsuario by id\n\u003cbr\u003e",
+                "description": "get PeriodoRolUsuario by id",
                 "operationId": "PeriodoRolUsuarioController.Get One",
                 "parameters": [
                     {
@@ -137,7 +137,7 @@
                 "tags": [
                     "periodos-rol-usuarios"
                 ],
-                "description": "update the PeriodoRolUsuario\n\u003cbr\u003e",
+                "description": "update the PeriodoRolUsuario",
                 "operationId": "PeriodoRolUsuarioController.Put",
                 "parameters": [
                     {
@@ -173,7 +173,7 @@
                 "tags": [
                     "periodos-rol-usuarios"
                 ],
-                "description": "delete the PeriodoRolUsuario\n\u003cbr\u003e",
+                "description": "delete the PeriodoRolUsuario",
                 "operationId": "PeriodoRolUsuarioController.Delete",
                 "parameters": [
                     {
@@ -199,7 +199,7 @@
                 "tags": [
                     "roles"
                 ],
-                "description": "get Rol\n\u003cbr\u003e",
+                "description": "get Rol",
                 "operationId": "RolController.Get All",
                 "parameters": [
                     {
@@ -255,7 +255,7 @@
                 "tags": [
                     "roles"
                 ],
-                "description": "create Rol\n\u003cbr\u003e",
+                "description": "create Rol",
                 "operationId": "RolController.Post",
                 "parameters": [
                     {
@@ -283,7 +283,7 @@
                 "tags": [
                     "roles"
                 ],
-                "description": "get Rol by id\n\u003cbr\u003e",
+                "description": "get Rol by id",
                 "operationId": "RolController.Get One",
                 "parameters": [
                     {
@@ -310,7 +310,7 @@
                 "tags": [
                     "roles"
                 ],
-                "description": "update the Rol\n\u003cbr\u003e",
+                "description": "update the Rol",
                 "operationId": "RolController.Put",
                 "parameters": [
                     {
@@ -346,7 +346,7 @@
                 "tags": [
                     "roles"
                 ],
-                "description": "delete the Rol\n\u003cbr\u003e",
+                "description": "delete the Rol",
                 "operationId": "RolController.Delete",
                 "parameters": [
                     {
@@ -372,7 +372,7 @@
                 "tags": [
                     "usuarios"
                 ],
-                "description": "get Usuario\n\u003cbr\u003e",
+                "description": "get Usuario",
                 "operationId": "UsuarioController.Get All",
                 "parameters": [
                     {
@@ -428,7 +428,7 @@
                 "tags": [
                     "usuarios"
                 ],
-                "description": "create Usuario\n\u003cbr\u003e",
+                "description": "create Usuario",
                 "operationId": "UsuarioController.Post",
                 "parameters": [
                     {
@@ -456,7 +456,7 @@
                 "tags": [
                     "usuarios"
                 ],
-                "description": "get Usuario by documento and periodos\n\u003cbr\u003e",
+                "description": "get Usuario by documento and periodos",
                 "operationId": "UsuarioController.Get One Periodo por Documento",
                 "parameters": [
                     {
@@ -521,7 +521,7 @@
                 "tags": [
                     "usuarios"
                 ],
-                "description": "get Usuario by id\n\u003cbr\u003e",
+                "description": "get Usuario by id",
                 "operationId": "UsuarioController.Get One",
                 "parameters": [
                     {
@@ -548,7 +548,7 @@
                 "tags": [
                     "usuarios"
                 ],
-                "description": "update the Usuario\n\u003cbr\u003e",
+                "description": "update the Usuario",
                 "operationId": "UsuarioController.Put",
                 "parameters": [
                     {
@@ -584,7 +584,7 @@
                 "tags": [
                     "usuarios"
                 ],
-                "description": "delete the Usuario\n\u003cbr\u003e",
+                "description": "delete the Usuario",
                 "operationId": "UsuarioController.Delete",
                 "parameters": [
                     {
