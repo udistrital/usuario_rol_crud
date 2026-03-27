@@ -1,11 +1,14 @@
 lastupdate.tmp
+.vscode/
 init.sql
 routers/commentsRouter____src_github_com_udistrital_usuario_rol_crud_controllers.go
 udistrital
 coverage.out
+.scannerwork/
 
 
 # Swagger
+swagger/**
 swagger.zip
 swagger/favicon-16x16.png
 swagger/favicon-32x32.png
@@ -19,6 +22,8 @@ swagger/swagger-ui.css
 swagger/swagger-ui.css.map
 swagger/swagger-ui.js
 swagger/swagger-ui.js.map
+!swagger/swagger.json
+!swagger/swagger.yml
 
 # IDE
 .idea
@@ -26,6 +31,7 @@ swagger/swagger-ui.js.map
 # Executables
 usuario_rol_crud*
 historico_usuarios_roles_crud*
+main
 
 go.mod
 go.sum
