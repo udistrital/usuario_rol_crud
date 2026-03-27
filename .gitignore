@@ -32,6 +32,3 @@ swagger/swagger-ui.js.map
 usuario_rol_crud*
 historico_usuarios_roles_crud*
 main
-
-go.mod
-go.sum
