@@ -6,7 +6,7 @@ require (
 	github.com/astaxie/beego v1.12.3
 	github.com/lib/pq v1.12.0
 	github.com/stretchr/testify v1.11.1
-	github.com/udistrital/utils_oas v0.4.2
+	github.com/udistrital/utils_oas v0.4.3
 )
 
 require (
