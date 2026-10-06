@@ -28,36 +28,32 @@ func main() {
 		return
 	}
 
-	AllowedOrigins := []string{"*.udistrital.edu.co"}
-	if beego.BConfig.RunMode == "dev" {
-		AllowedOrigins = []string{"*"}
+	allowedOrigins := []string{"*.udistrital.edu.co"}
+	if beego.BConfig.RunMode == beego.DEV {
+		allowedOrigins = []string{"*"}
 		orm.Debug = true
 		beego.BConfig.WebConfig.DirectoryIndex = true
 		beego.BConfig.WebConfig.StaticDir["/swagger"] = "swagger"
 	}
+
 	beego.InsertFilter("*", beego.BeforeRouter, cors.Allow(&cors.Options{
-		AllowOrigins: AllowedOrigins,
-		AllowMethods: []string{"PUT", "PATCH", "GET", "POST", "OPTIONS", "DELETE"},
-		AllowHeaders: []string{"Origin", "x-requested-with",
+		AllowOrigins: allowedOrigins,
+		AllowMethods: []string{"DELETE", "GET", "OPTIONS", "PATCH", "POST", "PUT"},
+		AllowHeaders: []string{
 			"Accept",
 			"Authorization",
 			"Content-Type",
 			"User-Agent",
-			"X-Amzn-Trace-Id",
-			"Origin",
-			"x-csrftoken"},
+			"X-Amzn-Trace-Id"},
 		ExposeHeaders:    []string{"Content-Length"},
 		AllowCredentials: true,
 	}))
 
-	err = xray.InitXRay()
-	if err != nil {
-		logs.Error("error configurando AWS XRay: %v", err)
-	}
-
 	apistatus.Init()
 	auditoria.InitMiddleware()
-	beego.ErrorController(&customerrorv2.CustomErrorController{})
 	security.SetSecurityHeaders()
+	xray.Init()
+
+	beego.ErrorController(&customerrorv2.CustomErrorController{})
 	beego.Run()
 }
