@@ -1,10 +1,9 @@
 module github.com/udistrital/usuario_rol_crud
 
-go 1.25.5
+go 1.27.3
 
 require (
 	github.com/astaxie/beego v1.12.3
-	github.com/beego/beego/v2 v2.3.10
 	github.com/lib/pq v1.12.3
 	github.com/stretchr/testify v1.11.1
 	github.com/udistrital/utils_oas v0.6.0
@@ -31,9 +30,11 @@ require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/elazarl/go-bindata-assetfs v1.0.1 // indirect
+	github.com/go-sql-driver/mysql v1.9.2 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/hashicorp/golang-lru v1.0.2 // indirect
-	github.com/klauspost/compress v1.18.0 // indirect
+	github.com/klauspost/compress v1.18.7 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
