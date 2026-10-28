@@ -5,10 +5,12 @@ Puede ser usado como apoyo para el servicio de WSO2 garantizando el almacenamien
 ## Especificaciones Técnicas
 
 ### Tecnologías Implementadas y Versiones
-* [Golang 1.22.2](https://github.com/udistrital/introduccion_oas/blob/master/instalacion_de_herramientas/golang.md)
+* [Golang 1.27.3](https://github.com/udistrital/introduccion_oas/blob/master/instalacion_de_herramientas/golang.md)
 * [BeeGo 1.12.0](https://github.com/udistrital/introduccion_oas/blob/master/instalacion_de_herramientas/beego.md)
 * [Docker](https://docs.docker.com/engine/install/ubuntu/)
 * [Docker Compose](https://docs.docker.com/compose/)
+* Imagen de runtime: `gcr.io/distroless/base-debian12:nonroot`
+
 
 ### Variables de Entorno
 
