@@ -328,6 +328,7 @@ func GetPeriodosByUsuarioId(usuarioId int, query map[string]string, fields []str
 	}
 	return nil, 0, err
 }
+
 func GetPeriodosBySistemaId(usuarioId *string, sistemaId string, query map[string]string, fields []string, sortby []string, order []string,
 	offset int64, limit int64) (ml []interface{}, total int64, err error) {
 	o := orm.NewOrm()
@@ -335,9 +336,9 @@ func GetPeriodosBySistemaId(usuarioId *string, sistemaId string, query map[strin
 	var params []interface{}
 
 	sql := `SELECT p.* 
-		FROM usuario_rol_db.periodo_rol_usuario p
-		INNER JOIN usuario_rol_db.rol r ON p.rol_id = r.id
-		INNER JOIN usuario_rol_db.usuario u ON p.usuario_id = u.id
+		FROM historico_rol_usuario.periodo_rol_usuario p
+		INNER JOIN historico_rol_usuario.rol r ON p.rol_id = r.id
+		INNER JOIN historico_rol_usuario.usuario u ON p.usuario_id = u.id
 		WHERE `
 
 	sql += "r.sistema_informacion_id = ?"
